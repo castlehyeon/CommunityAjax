@@ -136,11 +136,12 @@ public class ArticleController {
 //
 //        rq.println(jsonStr);
 //        rq.json(articleDtos);
-        Map<String, Object> resultData = new LinkedHashMap<String, Object>();
-
-        resultData.put("resultCode", "S-1");
-        resultData.put("msg", "성공");
-        resultData.put("data", articleDtos);
+//        Map<String, Object> resultData = new LinkedHashMap<String, Object>();
+//
+//        resultData.put("resultCode", "S-1");
+//        resultData.put("msg", "성공");
+//        resultData.put("data", articleDtos);
+        Map<String, Object> resultData = Ut.mapOf("resultCode", "S-1", "msg", "성공", "data", articleDtos);
 
         rq.json(resultData);
     }
