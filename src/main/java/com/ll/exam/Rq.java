@@ -152,4 +152,10 @@ public class Rq {
                 </script>
                 """);
     }
+    public void json(Object data) {
+        resp.setContentType("application/json; charset=utf-8");
+
+        String jsonStr = Ut.json.toStr(data, "");
+        println(jsonStr);
+    }
 }

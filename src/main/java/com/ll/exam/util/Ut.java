@@ -12,11 +12,14 @@ public class Ut {
         //ut클래스 내부에 static으로 클래스를 만듦.
 //        public static String toStr(Object obj, String defaultValue) {
 //            ObjectMapper om = new ObjectMapper();
-
+//        private static String resultCode;
+//        private static String msg;
             private static final ObjectMapper om;
 
             static {
                 om = new ObjectMapper();
+//                resultCode = "S - 1";
+//                msg = "성공";
             }
         public static String toStr(Object obj, String defaultValue) {
             try {
